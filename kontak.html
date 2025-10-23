@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SMAN 9</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #0d47a1;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+nav {
+  background: #1565c0;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+nav a:hover {
+  color: yellow;
+}
+
+  	/* Hero Section */
+.tentang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.gambar {
+  flex: 1;
+}
+
+.gambar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.teks {
+  flex: 1;
+  padding: 30px;
+}
+
+.teks h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.teks p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Konten */
+main {
+  flex: 1; /* biar ngisi ruang kosong */
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive HP */
+@media (max-width: 768px) {
+  .tentang {
+    flex-direction: column;
+  }
+
+  .gambar img {
+    border-bottom: 1px solid #eee;
+  }
+} 
+/* Hero Section */
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Kolom kiri */
+.kiri {
+    flex: 1;
+    padding: 30px;
+    border-right: 1px solid #eee;
+}
+
+.kiri h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.sosmed a {
+    display: block;
+    margin: 10px 0;
+    color: #555;
+    text-decoration: none;
+}
+
+.sosmed a:hover {
+    color: #007BFF;
+}
+
+/* Kolom kanan */
+.kanan {
+    flex: 1;
+    padding: 30px;
+}
+
+.kanan h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Konten */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive HP */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .kiri {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1>SMA NEGRI 9 Cirebon </h1>
+		<p>selamat datang di website sekolah kami</p>
+		</header>
+		
+		<nav>
+			<a href="index.html">Home</a>
+				<a href="tentang.html">Profil</a>
+				<a href="visi-misi.html">Visi Misi</=>
+				<a href="ekskul.html" >Ekskul</a>
+				<a href="kontak.html" style="color:yellow">Kontak</a>
+			</nav>
+			<main>
+	<h1>Hubungi Kami</h1>
+<div class="container">
+    <!-- Kolom kiri -->
+    <div class="kiri">
+        <h1>Kontak Kami</h1>
+        <p>Silakan hubungi atau ikuti sosial media kami:</p>
+        <div class="sosmed">
+            <a href="#">📞 Telepon: +62 812-3456-7890</a>
+            <a href="#">✉️ Email: info@sekolah.com</a>
+            <a href="#">📍 Alamat: Jl. Merdeka No. 12</a>
+            <br>
+            <a href="#">🌐 Instagram</a>
+            <a href="#">🌐 Facebook</a>
+            <a href="#">🌐 YouTube</a>
+        </div>
+    </div>
+
+    <!-- Kolom kanan -->
+    <div class="kanan">
+        <h2>Kirim Pesan</h2>
+        <form>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email">
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan..."></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</div>
+</main>
+	 </main>
+			<footer>
+				&copy; 2025 SMA Negri 9 Cirebon
+			</footer>
+			</body>
+</html>
